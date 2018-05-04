@@ -1,0 +1,16 @@
+<h2>Movies List</h2>
+
+<ul>
+  <li *ngFor="let oneMovie of movieTruc.Movies">
+    <h3>{{oneMovie.title}}</h3>
+    <p>ID: {{oneMovie.id}}</p>
+    <p>Genres: {{oneMovie.genres}}</p>
+    <p>Year: {{oneMovie.year}}</p>
+    <p>Director: {{oneMovie.director}}</p>
+    <p>Actors: {{oneMovie.actors}}</p>
+    <p>Hours: {{oneMovie.hours}}</p>
+    <p>Room: {{oneMovie.room}}</p>
+    <img src="{{oneMovie.poster}}" />
+    <a [routerLink]="['/Movie', oneMovie.id]">See Details</a>
+  </li>
+</ul>

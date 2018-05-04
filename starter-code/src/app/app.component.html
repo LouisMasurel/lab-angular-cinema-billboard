@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+  <h1>Movies Billboard</h1>
+
+  <nav>
+    <a routerLink="/">Home</a>
+    <a routerLink="/movies">Your movies</a>
+    <a routerLink="/movies/:blahId">Your choice</a>
+
+  </nav>
+</header>
+
+<!-- {{{body}}} -->
+<router-outlet></router-outlet>
+
+<footer>
+  <p>Made with 📱 at Ironhack.</p>
+</footer>

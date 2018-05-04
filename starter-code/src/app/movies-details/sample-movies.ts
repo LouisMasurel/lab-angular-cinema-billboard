@@ -1,21 +1,18 @@
-// export class Movie { 
-//   constructor (
-//     public id : number = unique,
-//     public title : string,
-//     public poster : string,
-//     public synopsis : string,
-//     public genres : [strings],
-//     public year : number,
-//     public director : string,
-//     public actors : [strings],
-//     public hours : [strings],
-//     public room : number
-//   ) {}
-//   }
+export class Movie { 
+  constructor (
+    public id : number,
+    public title : string,
+    public poster : string,
+    public synopsis : string,
+    public genres : Array<string>,
+    public year : number,
+    public director : string,
+    public actors : Array<string>,
+
+  ) {}
+  }
   
-  // export const MovieList = 
-  
-  [
+  export const movieList = [
   {
     id: 1,
     title: "The Shawshank Redemption",
